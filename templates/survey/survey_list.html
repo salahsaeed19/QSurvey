@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Survey List - QSurvey{% endblock %}
+
+{% block content %}
+    <h1>
+        Available Surveys
+    </h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Survey Name</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for survey in surveys %}
+                <tr>
+                    <td>{{ survey.name }}</td>
+                    <td>
+                        <a href="{% url 'survey_detail' survey.id %}" class="btn btn-info">View</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,23 @@
+/* تخصيص الأزرار */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* تخصيص شريط التنقل */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* تخصيص خلفية الصفحة */
+body {
+    background-color: #f8f9fa;
+}

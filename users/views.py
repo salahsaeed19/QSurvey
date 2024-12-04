@@ -33,3 +33,7 @@ class CustomLoginView(LoginView):
 
 class CustomLogoutView(LogoutView):
     template_name = 'users/logout.html'
+
+
+def home(request):
+    return render(request, 'home.html')
